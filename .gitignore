@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+
+# Build output
+client/dist/
+
+# Runtime data
+uploads/
+outputs/
+data/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Debug/temp scripts
+fix_syntax*.js
+test_upload.js
+
+# Env files
+.env
+.env.local

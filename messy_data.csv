@@ -1,0 +1,11 @@
+customer_id,full_name,email,phone_number,city,signup_date
+CUST100,Shanaya Madan,  AHANA-VORA@gmail.com  ,+91 73328 67654,chennai,21/04/2023
+CUST101,Mannat Talwar,akarsh20@wason.com,8578396720,pune,11-06-2024
+CUST102,Aaryahi Shenoy,,799483832,chennai,02/06/2024
+CUST103,Jayesh Jha,urvi41@yahoo.com,9834699453,kolkata,2025-03-24
+CUST100,Shanaya Madan,ahana-vora@gmail.com,7332867654,Chennai,2023-04-21
+CUST104,Armaan Sarna,nishith98@chauhan.com,07513076043,Pune,07/07/2024
+CUST105,Invalid Date User,invalid@email,9999999999,Delhi,random_string
+CUST106,Missing Fields User,,,Mumbai,2024-01-01
+CUST107,US Number in IN,user@test.com,+1234567890,Bangalore,2024-02-02
+CUST108,Jayesh Jhaa,urvi41@yahoo.com,9834699453,Kolkata,2025-03-24

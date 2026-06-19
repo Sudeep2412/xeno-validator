@@ -1,0 +1,82 @@
+{
+  "IN": {
+    "name": "India",
+    "phoneLength": 10,
+    "phoneRegex": "^[6-9]\\d{9}$",
+    "phonePrefixes": ["+91", "91", "0"],
+    "dateFormats": ["YYYY-MM-DD", "DD/MM/YYYY", "DD-MM-YYYY"],
+    "currencyCode": "INR",
+    "currencySymbol": "₹",
+    "postalCodeRegex": "^\\d{6}$"
+  },
+  "SG": {
+    "name": "Singapore",
+    "phoneLength": 8,
+    "phoneRegex": "^[689]\\d{7}$",
+    "phonePrefixes": ["+65", "65"],
+    "dateFormats": ["YYYY-MM-DD", "DD/MM/YYYY"],
+    "currencyCode": "SGD",
+    "currencySymbol": "S$",
+    "postalCodeRegex": "^\\d{6}$"
+  },
+  "US": {
+    "name": "United States",
+    "phoneLength": 10,
+    "phoneRegex": "^[2-9]\\d{2}[2-9]\\d{6}$",
+    "phonePrefixes": ["+1", "1"],
+    "dateFormats": ["YYYY-MM-DD", "MM/DD/YYYY", "MM-DD-YYYY"],
+    "currencyCode": "USD",
+    "currencySymbol": "$",
+    "postalCodeRegex": "^\\d{5}(-\\d{4})?$"
+  },
+  "GB": {
+    "name": "United Kingdom",
+    "phoneLength": 11,
+    "phoneRegex": "^0[1-9]\\d{8,9}$",
+    "phonePrefixes": ["+44", "44"],
+    "dateFormats": ["YYYY-MM-DD", "DD/MM/YYYY"],
+    "currencyCode": "GBP",
+    "currencySymbol": "£",
+    "postalCodeRegex": "^[A-Z]{1,2}\\d[A-Z\\d]? ?\\d[A-Z]{2}$"
+  },
+  "AE": {
+    "name": "United Arab Emirates",
+    "phoneLength": 9,
+    "phoneRegex": "^5[0-9]\\d{7}$",
+    "phonePrefixes": ["+971", "971", "0"],
+    "dateFormats": ["YYYY-MM-DD", "DD/MM/YYYY"],
+    "currencyCode": "AED",
+    "currencySymbol": "د.إ",
+    "postalCodeRegex": "^\\d{5}$"
+  },
+  "AU": {
+    "name": "Australia",
+    "phoneLength": 10,
+    "phoneRegex": "^0[2-478]\\d{8}$",
+    "phonePrefixes": ["+61", "61"],
+    "dateFormats": ["YYYY-MM-DD", "DD/MM/YYYY"],
+    "currencyCode": "AUD",
+    "currencySymbol": "A$",
+    "postalCodeRegex": "^\\d{4}$"
+  },
+  "JP": {
+    "name": "Japan",
+    "phoneLength": 11,
+    "phoneRegex": "^0[7-9]0\\d{8}$",
+    "phonePrefixes": ["+81", "81"],
+    "dateFormats": ["YYYY-MM-DD", "YYYY/MM/DD"],
+    "currencyCode": "JPY",
+    "currencySymbol": "¥",
+    "postalCodeRegex": "^\\d{3}-?\\d{4}$"
+  },
+  "DE": {
+    "name": "Germany",
+    "phoneLength": 11,
+    "phoneRegex": "^0[1-9]\\d{9,10}$",
+    "phonePrefixes": ["+49", "49"],
+    "dateFormats": ["YYYY-MM-DD", "DD.MM.YYYY"],
+    "currencyCode": "EUR",
+    "currencySymbol": "€",
+    "postalCodeRegex": "^\\d{5}$"
+  }
+}
