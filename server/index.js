@@ -43,6 +43,19 @@ app.get('/api/v1/progress/:jobId', (req, res) => {
   // Send initial ping to establish connection
   res.write(`data: ${JSON.stringify({ progress: 0, stage: 'Connecting...', status: 'connecting' })}\n\n`);
 
+  const { getJob } = require('./db/database');
+  const job = getJob.get(jobId);
+  if (job) {
+    if (job.status === 'done') {
+      res.write(`data: ${JSON.stringify({ progress: 100, stage: 'Done', status: 'done' })}\n\n`);
+      return res.end();
+    }
+    if (job.status === 'failed') {
+      res.write(`data: ${JSON.stringify({ progress: -1, stage: 'Failed', status: 'failed' })}\n\n`);
+      return res.end();
+    }
+  }
+
   // Register callback for this job
   registerProgressCallback(jobId, (progress, stage) => {
     let status = 'processing';
