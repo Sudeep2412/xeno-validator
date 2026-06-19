@@ -36,6 +36,9 @@ app.get('/api/v1/progress/:jobId', (req, res) => {
   res.setHeader('Content-Type', 'text/event-stream');
   res.setHeader('Cache-Control', 'no-cache');
   res.setHeader('Connection', 'keep-alive');
+  res.setHeader('X-Accel-Buffering', 'no'); // Prevents Railway/Nginx from buffering SSE
+  
+  res.flushHeaders();
   
   // Send initial ping to establish connection
   res.write(`data: ${JSON.stringify({ progress: 0, stage: 'Connecting...', status: 'connecting' })}\n\n`);
