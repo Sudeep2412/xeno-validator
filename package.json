@@ -12,6 +12,9 @@
     "build": "cd client && npm run build",
     "start": "cd server && npm start"
   },
+  "engines": {
+    "node": ">=20.0.0"
+  },
   "devDependencies": {
     "concurrently": "^9.1.0"
   }
